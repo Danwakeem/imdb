@@ -22,6 +22,7 @@ export default class Movie {
   }
 
   async get(endpoint: string): Promise<Movie> {
+    console.log(`${endpoint}/title/${this.id}/`)
     let r = await request(`${endpoint}/title/${this.id}/`)
     const $ = cheerio.load(r)
 

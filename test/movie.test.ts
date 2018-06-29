@@ -3,6 +3,7 @@ import { IMDb, Movie } from '../src'
 describe('Movie', async () => {
   // Account for the IMDb loading times
   jest.setTimeout(10000)
+  jest.mock('../__mocks__/request-promise-native')
 
   let movie: Movie
 
