@@ -28,7 +28,7 @@ describe('Movie', async () => {
 
   it('has runtime', () => {
     expect(movie.getRuntime()).toBe('2h 24min')
-  });
+  })
 
   it('has description', () => {
     expect(movie.getDescription()).toBeDefined()
@@ -39,7 +39,7 @@ describe('Movie', async () => {
   })
 
   it('has ratingCount', () => {
-    expect(movie.getRatingCount()).toBeDefined();
+    expect(movie.getRatingCount()).toBeDefined()
   })
 
   it('has poster', () => {
